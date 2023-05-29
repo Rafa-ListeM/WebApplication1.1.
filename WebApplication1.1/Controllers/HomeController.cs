@@ -13,7 +13,19 @@ namespace WebApplication1._1_.Controllers
             _logger = logger;
         }
 
+        //Action Result devolve uma tela (Html)
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        //Mais uma tela no sistema
+        public IActionResult Produto()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
         {
             return View();
         }

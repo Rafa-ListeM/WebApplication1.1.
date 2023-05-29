@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication1._1_</title>
+    <title> Geek Street</title>
+    <link rel="icon" type="image/x-icon" href="/logotipo/123.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1._1_.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1._1_</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                    Geek <img class="logo" src="./logotipo/logotipo.png"></img> Street</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +22,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -34,12 +36,147 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
+        <img class="banner" src="~/logotipo/banner.png"></img>
+
     </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="txt_pdt">
+                <br /><br />
+                <h2><b>Geek Street: Vista-se com Paixão!</b></h2>
+                <p>
+                    Descubra um universo de estilo e paixão na nossa coleção de camisas e acessórios temáticos Geek!
+                    Se você é um fã de filmes, séries, jogos, quadrinhos ou cultura pop em geral,
+                    você encontrará algo incrível para exibir seu amor por essas paixões.
+                    Nossas camisas são feitas com materiais de alta qualidade, garantindo conforto e durabilidade.
+                    <br /><br />
+                    Desde os super-heróis icônicos até os personagens mais amados da ficção científica,
+                    temos uma ampla variedade de estampas exclusivas para atender a todos os gostos.
+                    Além das camisas, oferecemos uma ampla gama de acessórios que vão desde camisetas, moletons até canecas e
+                    garrafas,
+                    todos inspirados nos temas mais populares da cultura Geek.
+                    <br /><br />
+                    Complemente seu visual e mostre ao mundo sua autenticidade Geek com nossos produtos cheios de
+                    personalidade.
+                    Seja você um ávido colecionador, um gamer entusiasta ou um aficionado por filmes,
+                    temos algo especial para você.
+                    <br /><br />
+                    Nossa loja é o lugar perfeito para encontrar presentes incríveis para amigos Geeks e até mesmo para se
+                    mimar.
+                    Não perca tempo, mergulhe na nossa seleção Geek e descubra uma nova forma de expressar sua paixão.
+                    Vista-se com orgulho e mostre ao mundo seu lado Geek!
+                </p>
+
+            </div>
+
+            <div>
+                <img class="teste2" src="./logotipo/JL-CC-Group-1.jpg" alt=" Imagem de fundo1">
+            </div>
+
+            <br>
+            <br>
+
+
+    <h1 class="title-carrossel"><b>Novidades já disponiveis</b></h1>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./logotipo/AVATAR.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./logotipo/LOL1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./logotipo/projeto02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+             <div class="carousel-item">
+                <img src="./logotipo/0000.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="txt_pdt2">
+        <h2><br /><b>Politicas Geek Street</b></h2>
+        <br>
+        <p>
+            <b>
+                Bem-vindo à nossa loja Geek Street! Valorizamos nossos clientes e buscamos proporcionar uma experiência de
+                compra excepcional. Aqui estão algumas das nossas políticas para garantir sua satisfação:
+            </b>
+        </p>
+        <ul>
+            Qualidade Superior: Nossos produtos são cuidadosamente selecionados e fabricados com materiais de alta
+            qualidade.
+        </ul>
+        <ul>
+            Envio Rápido e Seguro: Fazemos o possível para garantir que seus produtos sejam enviados o mais rápido
+            possível, com um processo de embalagem seguro para proteger seus itens durante o transporte.
+        </ul>
+        <ul>
+            Política de Devolução Justa: Se, por algum motivo, você não estiver satisfeito com sua compra, aceitamos
+            devoluções dentro de um prazo específico, desde que os produtos estejam em condições originais.
+        </ul>
+        <ul>
+            Segurança e Privacidade: Valorizamos sua privacidade e implementamos medidas de segurança para proteger seus
+            dados pessoais. Todas as transações são processadas de forma segura e confidencial
+        </ul>
+
+        <p>
+            <b>
+                Estamos empenhados em fornecer uma experiência de compra excepcional para os entusiastas da cultura Geek.
+                Explore nossa coleção, vista-se com orgulho e deixe sua paixão Geek brilhar!
+            </b>
+        </p>
+    </div>
+
+    <div>
+        <img class="teste" src="./logotipo/247575-super-herois-marvel-e-as-licoes-que-aprendemos-com-eles.webp"
+             alt=" Imagem de fundo2">
+    </div>
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - WebApplication1._1_ - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+            </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
