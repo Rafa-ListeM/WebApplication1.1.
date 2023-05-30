@@ -27,6 +27,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Produtos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +39,6 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-
         <img class="banner" src="~/logotipo/banner.png"></img>
 
     </div>
@@ -90,10 +92,6 @@
         </div>
     </div>
     <!-- fim do chat do watzz -->
-
-
-
-    <br>
     <br>
     <div class="tex-prodt">
         <h2 class="txt_pdt">
@@ -250,11 +248,27 @@
     </div>
     <!-- fim card pessoas -->
 
+    <br />
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Obrigado por pelo seu tempo!</h3>
+            <p>Agradecemos por escolher a Geek Street como sua loja de preferência para camisas e acessórios temáticos
+                Geek. Foi um prazer atendê-lo e esperamos que você tenha encontrado produtos que agregaram estilo e
+                diversão à sua vida. Estamos sempre aqui para oferecer produtos incríveis e um serviço excepcional.
+                Continue explorando o mundo Geek e lembre-se de que estamos aqui para satisfazer todas as suas
+                necessidades Geek. Até a próxima aventura!
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            </div>
+                Lembre-se de seguir-nos nas redes sociais e inscrever-se em nossa newsletter para ficar por dentro das
+                últimas novidades, promoções e lançamentos. Estamos ansiosos para tê-lo novamente como nosso cliente em
+                breve. Obrigado por fazer parte da comunidade Geek Street. Até logo!</p>
+
+        </div>
+        <br />
+        <div class="footer-bottom">
+                Geek Street 2023&copy; 
+        </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
