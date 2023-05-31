@@ -23,14 +23,18 @@ body {
     text-align: center;
 }
 
+
 .banner {
-    margin-top: 10px;
     width: 100%;
-    height: 100%;
     border: 2px solid #000000;
-    border-radius: 5px;
     box-shadow: black 15px 15px 10px;
+    height:450px;
 }
+
+    .banner img {
+        width: 100%;
+        height:100%
+    }
 
 
 /*Menu*/
@@ -51,6 +55,7 @@ body {
     background-image: url('/logotipo/247575-super-herois-marvel-e-as-licoes-que-aprendemos-com-eles.webp');
     width: 100%;
     height: 560px;
+    position: relative;
 }
 
 .tex-prodt2 {
@@ -60,10 +65,11 @@ body {
 }
 
 .txt_pdt {
+    
     width: 100%;
     height: 100%;
-    color: black;
-    background-color: #bdbdbdde;
+    color: white;
+    background-color: #0c0c0cce;
     text-align: center;
 }
 
