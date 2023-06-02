@@ -676,3 +676,218 @@ footer {
 
 
 
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+
+.card {
+    margin-right: 5%;
+    margin-top: 7%;
+    width: 20%;
+    height: 318px;
+    background: rgb(182, 181, 181);
+    background: #f1eeee;
+    box-shadow: 13px 16px 20px #524d4d;
+    transition: all .5s ease-in-out;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #757575;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    .card:hover {
+        transform: translateY(-30px);
+        transition: all .5s ease-in-out;
+    }
+
+.title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: rgb(0, 0, 0);
+    font-family: 'Rokkitt', serif;
+    margin-left: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: rgb(63, 63, 63);
+}
+
+.carta .options {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 97px;
+    margin-right: 77px;
+}
+
+    .carta .options button {
+        margin-right: 74px;
+        margin-left: -48px;
+        background-color: #000000;
+        color: rgb(109, 108, 108);
+        border: none;
+        border-radius: 50%;
+        width: 58px;
+        height: 13px;
+    }
+
+.card-button {
+    left: 145px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+}
+
+    .card-button :hover {
+        transform: scale(1.1);
+    }
+
+.card-heart {
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card-heart :hover {
+        transform: scale(1.1);
+        box-shadow: none;
+    }
+
+    .card-button:focus,
+    .card-heart:focus {
+        outline: none;
+    }
+
+ion-icon {
+    font-size: 24px;
+    color: rgb(109, 108, 108);
+}
+
+.carta .options button:last-child {
+    margin-right: 0;
+}
+
+.carta .options button:hover {
+    background-color: #3f3f3f;
+}
+
+.carta .options button.active {
+    background-color: #949494;
+}
+
+.carta-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+    .carta-button:hover {
+        border: 1px solid #ffcaa6;
+        background-color: #ffcaa6;
+    }
+
+.carta-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carta {
+    width: 106%;
+    border: none;
+    padding: 5%;
+    margin: 8%;
+}
+
+    .carta .camiseta {
+        width: 100%;
+        height: auto;
+        margin-bottom: -3px;
+    }
+
+icon-icon {
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+}
+
+.camiseta {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.preco {
+    margin-left: 97px;
+}
+
+@media (min-width:768px) {
+    .banner {
+        margin-top: 22px;
+        width: 60%;
+    }
+    .logo{
+        width:40%;
+    }
+    p{
+        font-size:18px;
+    }
+    .galery .fotos{
+        height:300px;
+    }
+    ul{
+        font-size:15px;
+    }
+    .footer-content p {
+        max-width:675px;
+        font-size:13px;
+    }
+}
+
+@media (min-width:425px){
+    .logo{
+        width:100%;
+    }
+    p{
+        font-size:14px;
+        margin:6%;
+    }
+    ul{
+        font-size:13px;
+    }
+    .footer-content p {
+        max-width: 355px;
+        font-size: 12px;
+    }
+}
