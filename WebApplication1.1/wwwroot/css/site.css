@@ -29,7 +29,7 @@ body {
 }
 
 .fixed-top {
-    position: relative;
+    /* position: relative; */
     top: 0;
     right: 0;
     left: 0;
@@ -187,9 +187,8 @@ body {
 }
 
 .banner {
-    margin-top: 40px;
+    margin-top: 90px;
     width: 80%;
-    height: -3%;
     border: 2px solid #000000;
     border-radius: 5px;
     box-shadow: black 15px 15px 10px;
@@ -1023,3 +1022,10 @@ icon-icon {
             content: 'Google+';
         }
 }
+
+
+
+
+
+
+
