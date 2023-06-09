@@ -1,5 +1,52 @@
 ﻿
 <style>
+    h1 {
+        text-align: center;
+    }
+
+    #produtos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+        .produto img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+    #adicionar {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    #carrinho {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        #carrinho li {
+            margin-bottom: 10px;
+        }
+
+
     .carrinho {
         position: absolute;
         height:35px;
@@ -7,11 +54,34 @@
         background-color:white;
         right:13px;
         bottom:22px;
-    }
+        }
 
 </style>
 
+    <h1 style="margin-top:20px;">Carrinho de Compras</h1>
+    <div id="produtos">
+        <div class="produto">
+            <img src="/camisetas/A1.png">
+            <h2>Produto 1</h2>
+            <p>R$ 50,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="/camisetas/BKH2.png">
+            <h2>Produto 2</h2>
+            <p>R$ 45,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+    </div>
+    <h2>Itens no Carrinho:</h2>
+    <ul id="carrinho">
+    </ul>
+                        
+
+
 <!-- INICIO NAVBAR -->
+<html lang="en">
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark bg-light" id="navbar">
     <div class="container-fluid">
         <a class="navbar-brand text-white" text-white" asp-area="" asp-controller="Home" asp-action="Index">
@@ -24,9 +94,37 @@
                     <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Produto">Produtos</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Produto">Minhas compras <img class="carrinho" src="/logotipo/bag1.svg" /></a>
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Minhas compras <img class="carrinho" src="/logotipo/bag1.svg" /></a>
                 </li>
+
             </ul>
         </div>
     </div>
 </nav>
+
+
+<script>
+    // Adicionando um ouvinte de eventos aos botões "Adicionar ao Carrinho"
+    var botoesAdicionar = document.getElementsByClassName("adicionar");
+    for (var i = 0; i < botoesAdicionar.length; i++) {
+        var botao = botoesAdicionar[i];
+        botao.addEventListener('click', adicionarItemAoCarrinho);
+    }
+
+    // Função para adicionar um item ao carrinho
+    function adicionarItemAoCarrinho(event) {
+        var botao = event.target;
+        var produto = botao.parentElement;
+        var nome = produto.querySelector('h2').innerText;
+        var preco = produto.querySelector('p').innerText;
+        criarItemNoCarrinho(nome, preco);
+    }
+
+    // Função para criar um item no carrinho
+    function criarItemNoCarrinho(nome, preco) {
+        var itemCarrinho = document.createElement('li');
+        itemCarrinho.innerText = nome + ' - ' + preco;
+        var carrinho = document.getElementById('carrinho');
+        carrinho.appendChild(itemCarrinho);
+    }
+</script>
