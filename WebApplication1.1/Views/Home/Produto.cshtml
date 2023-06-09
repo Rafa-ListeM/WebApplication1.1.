@@ -1,15 +1,60 @@
 ﻿<style>
-    .
+    .product-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 300ms;
+    }
+
+        .product-container :hover {
+        opacity: 0.8;
+        transform: scale(1.10);
+    }
+
+    .product {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        
+    }
+    
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .product h2 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
 </style>
 
 <br>
 <br>
 <br>
 
-<div class="bot-img-tem">
-    <button class="image-button">
-        <img src="/logotipo/Design-sem-nome-11.jpg" alt="Botão"/>
-    </button>
+<div class="product-container">
+    <div class="product">
+        <img src="/camisetas/garrafa escarlat.png" alt="Produto 1">
+        <h2>Produto 1</h2>
+        <p>Descrição do Produto 1</p>
+        <p>R$ 10,00</p>
+    </div>
+    <div class="product">
+        <img src="/camisetas/capinha escalate.jpg" alt="Produto 2">
+        <h2>Produto 2</h2>
+        <p>Descrição do Produto 2</p>
+        <p>R$ 15,00</p>
+    </div>
 </div>
 
 <div class="carrossel">
