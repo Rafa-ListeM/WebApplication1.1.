@@ -841,8 +841,12 @@ icon-icon {
         font-size:18px;
     }
     .galery .fotos{
-        height:300px;
+        height:168px;
     }
+    .galery .fotos img{
+        width:295px;
+    }
+
     ul{
         font-size:15px;
     }
@@ -1244,5 +1248,264 @@ ion-icon {
 
     100% {
         transform: scale(1);
+    }
+}
+
+
+
+
+/*************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+*********************************************************************************************
+*Responsividade tela inicial*/
+
+@media (min-width:2560px) {
+    .footer-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .footer-content p {
+        max-width: 1277px;
+        margin: 31px auto;
+        line-height: 39px;
+        font-size: 36px;
+        color: #cacdd2;
+    }
+
+    .footer-bottom {
+        padding: 31px;
+        font-size: 30px;
+    }
+
+    .register-button {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .user-picture {
+        width: 16rem;
+        height: 16rem;
+        border: 6px solid #ffffff;
+        border-radius: 944px;
+    }
+
+    .card-client {
+        width: 22rem;
+        padding-bottom: 47px;
+    }
+
+    .name-client {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+
+    .social-media a {
+        margin-right: 43px;
+    }
+
+    .tex-prodt2 {
+        height: 1020px;
+    }
+
+    .tex-prodt {
+        height: 900px;
+    }
+
+    .banner {
+        width: 65%;
+        margin-top: 130px;
+    }
+
+    .logo {
+        width: 31%;
+        height: 72px;
+    }
+
+    .navbar a {
+        font-size:35px;
+    }
+    .whatswidget-conversation-message-outer {
+        padding: 26px !important;
+        margin: -15px !important;
+        margin-left: 9px !important;
+        border-radius: 24px !important;
+        margin-bottom: 86px !important;
+    }
+    .whatswidget-text-header-outer {
+        font-size: 30px !important;
+    }
+    .whatswidget-text-message-outer {
+        font-size: 28px !important;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-light .navbar-toggler {
+        color: rgb(255 255 255 / 12%);
+        border-color: rgb(255 255 255);
+        margin-top: 20px;
+    }
+
+    .banner {
+        margin-top: 105px;
+        width: 65%;
+    }
+
+    .register-div {
+        padding: 12px;
+        height: 352px;
+    }
+
+    .whatswidget-text-message-outer {
+        font-size: 65% !important;
+    }
+
+    .whatswidget-text-header-outer {
+        font-size: 72% !important;
+    }
+
+    .whatswidget-conversation-message-outer {
+        padding: 8px !important;
+    }
+    .whatswidget-button {
+        width: 41px !important;
+        height: 40px !important;
+    }
+    .whatswidget-icon {
+        width: 30px !important;
+        height: 30px !important;
+        bottom: 5px !important;
+        left: 7px !important;
+    }
+    .whatswidget-widget-wrapper {
+        bottom: -56px !important;
+        right: 57px !important;
+    }
+}
+
+@media (min-width:425px){
+    .navbar-light .navbar-toggler {
+        margin-top: 28px;
+    }
+
+    .whatswidget-text-message-outer {
+        font-size: 65% !important;
+    }
+
+    .whatswidget-text-header-outer {
+        font-size: 72% !important;
+    }
+
+    .whatswidget-conversation-message-outer {
+        padding: 5px !important;
+    }
+
+    .whatswidget-button {
+        width: 41px !important;
+        height: 40px !important;
+    }
+
+    .whatswidget-icon {
+        width: 30px !important;
+        height: 30px !important;
+        bottom: 5px !important;
+        left: 7px !important;
+    }
+
+    .whatswidget-widget-wrapper {
+        bottom: -56px !important;
+        right: 57px !important;
+    }
+
+    .register-div {
+        height: 387px;
+    }
+    .banner {
+        margin-top: 102px;
+        width: 85%;
+    }
+}
+
+@media (max-width:375px) {
+
+    .galery {
+        width: 80%;
+    }
+
+    .tex-prodt {
+        height: 586px;
+    }
+
+    .tex-prodt2 {
+        height: 597px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-top: 28px;
+    }
+
+    .whatswidget-text-message-outer {
+        font-size: 65% !important;
+    }
+
+    .whatswidget-text-header-outer {
+        font-size: 72% !important;
+    }
+
+    .whatswidget-conversation-message-outer {
+        padding: 5px !important;
+    }
+
+    .whatswidget-button {
+        width: 41px !important;
+        height: 40px !important;
+    }
+
+    .whatswidget-icon {
+        width: 30px !important;
+        height: 30px !important;
+        bottom: 5px !important;
+        left: 7px !important;
+    }
+
+    .whatswidget-widget-wrapper {
+        bottom: -25px !important;
+        right: 47px !important;
+    }
+
+    .register-div {
+        height: 387px;
+    }
+
+    .banner {
+        margin-top: 102px;
+        width: 85%;
+    }
+    .social-media a {
+        margin-right: 4px;
+    }
+
+    .card-client {
+        margin: 4%;
+        width: 13rem;
+        padding-top: 6px;
+        padding-bottom: 11px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .footer-content p {
+        max-width: 290px;
     }
 }
