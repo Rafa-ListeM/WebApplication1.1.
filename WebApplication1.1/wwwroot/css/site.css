@@ -1351,14 +1351,17 @@ ion-icon {
     }
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .navbar-light .navbar-toggler {
         color: rgb(255 255 255 / 12%);
         border-color: rgb(255 255 255);
         margin-top: 20px;
     }
 
-    .banner {
+    .galery {
+        width: 39%;
+    }
+        .banner {
         margin-top: 105px;
         width: 65%;
     }
@@ -1395,7 +1398,7 @@ ion-icon {
     }
 }
 
-@media (min-width:425px){
+@media (max-width:425px) {
     .navbar-light .navbar-toggler {
         margin-top: 28px;
     }
@@ -1427,6 +1430,10 @@ ion-icon {
     .whatswidget-widget-wrapper {
         bottom: -56px !important;
         right: 57px !important;
+    }
+
+    .galery {
+        width: 71%;
     }
 
     .register-div {
