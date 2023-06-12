@@ -34,6 +34,11 @@ namespace WebApplication1._1_.Controllers
         {
             return View();
         }
+        
+        public IActionResult Pessoa()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
