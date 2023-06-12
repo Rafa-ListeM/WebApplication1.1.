@@ -24,6 +24,10 @@ namespace WebApplication1._1_.Controllers
         {
             return View();
         }
+        public IActionResult Produto2()
+        {
+            return View();
+        }
 
         public IActionResult Login()
         {
