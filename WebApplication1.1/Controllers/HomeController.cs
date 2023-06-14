@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using WebApplication1._1_.Models;
 
@@ -6,11 +7,11 @@ namespace WebApplication1._1_.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly Contexto _dbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(Contexto dbContext)
         {
-            _logger = logger;
+            _dbContext = dbContext;
         }
 
         //Action Result devolve uma tela (Html)
@@ -29,9 +30,40 @@ namespace WebApplication1._1_.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        [HttpPost]
+        public IActionResult Cadastro(Cadastro cadastro)
         {
-            return View();
+            if (cadastro.Senha != cadastro.ConfirmSenha)
+            {
+                // Senha e confirmação de senha não correspondem
+                ViewBag.ErrorMessage = "A senha e a confirmação de senha não correspondem.";
+                return View();
+            }
+
+            // Adicionar o novo cliente à tabela "Customers"
+            _dbContext.Cadastro.Add(cadastro);
+            _dbContext.SaveChanges();
+
+            // Redirecionar para a página de login ou fazer outra ação
+            return RedirectToAction("Pessoa", "Home");
+        }
+
+        public IActionResult Login(string Login, string Senha)
+        {
+            var existingUser = _dbContext.Login.FirstOrDefault(u => u.Email == Login
+            && u.Senha == Senha);
+
+            if (existingUser != null)
+            {
+                // Usuário autenticado com sucesso
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // Autenticação falhou
+                ViewBag.ErrorMessage = "Credenciais inválidas.";
+                return View();
+            }
         }
 
         public IActionResult Privacy()

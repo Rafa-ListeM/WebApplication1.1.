@@ -1,7 +1,11 @@
 ﻿<div class="log">
     <br />
     <div id="logreg-forms">
-        <form class="form-signin">
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        }
+        <form class="form-signin" action="/login" method="post">
             <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Login</h1>
             <div class="social-login">
                 <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook"></i> Com Facebook</span> </button>
@@ -11,7 +15,7 @@
             <input type="email" id="inputEmail" class="form-control" placeholder=" Endereço de email" required="" autofocus="">
             <input type="password" id="inputPassword" class="form-control" placeholder=" Senha" required="">
 
-            <button class="btn btn-success btn-block" asp-area="" asp-controller="Home" asp-action="Pessoa" type="submit"><i class="fas fa-sign-in-alt"></i> Logar</button>
+            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Logar</button>
             <a href="#" id="forgot_pswd"> Esqueceu sua senha?</a>
             <hr>
             <!-- <p>Don't have an account!</p>  -->
@@ -32,10 +36,10 @@
 
         <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Cadastre-se</h1>
 
-            <input type="text" id="user-name" class="form-control" placeholder=" Nome completo" required="" autofocus="">
-            <input type="email" id="user-email" class="form-control" placeholder=" Endereço de email" required autofocus="">
-            <input type="password" id="user-pass" class="form-control" placeholder=" Senha" required autofocus="">
-            <input type="password" id="user-repeatpass" class="form-control" placeholder=" Repita a senha" required autofocus="">
+            <input type="text" name="Name" id="user-name" class="form-control" placeholder=" Nome completo" required="" autofocus="">
+            <input type="email" name="Email" id="user-email" class="form-control" placeholder=" Endereço de email" required autofocus="">
+            <input type="password" name="Senha" id="user-pass" class="form-control" placeholder=" Senha" required autofocus="">
+            <input type="password" name="ConfirmSenha" id="user-repeatpass" class="form-control" placeholder=" Repita a senha" required autofocus="">
 
             <button class="btn btn-primary btn-block" asp-area="" asp-controller="Home" asp-action="Login" type="submit"><i class="fa fa-plus-square-o"></i> Cadastrar</button>
         <hr />
