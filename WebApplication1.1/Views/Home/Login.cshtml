@@ -32,16 +32,16 @@
             <a href="#" id="cancel_reset"><i class="fa fa-long-arrow-left"></i> Voltar</a>
         </form>
 
-        <form action="/signup/" class="form-signup">
+        <form action="/Home/Cadastro" class="form-signup" method="post">
 
         <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Cadastre-se</h1>
 
-            <input type="text" name="Name" id="user-name" class="form-control" placeholder=" Nome completo" required="" autofocus="">
+            <input type="text" name="Nome" id="user-name" class="form-control" placeholder=" Nome completo" required="" autofocus="">
             <input type="email" name="Email" id="user-email" class="form-control" placeholder=" Endereço de email" required autofocus="">
             <input type="password" name="Senha" id="user-pass" class="form-control" placeholder=" Senha" required autofocus="">
             <input type="password" name="ConfirmSenha" id="user-repeatpass" class="form-control" placeholder=" Repita a senha" required autofocus="">
 
-            <button class="btn btn-primary btn-block" asp-area="" asp-controller="Home" asp-action="Login" type="submit"><i class="fa fa-plus-square-o"></i> Cadastrar</button>
+            <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-plus-square-o"></i> Cadastrar</button>
         <hr />
 
         <p style="text-align:center">ou</p>
