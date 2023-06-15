@@ -56,7 +56,7 @@ namespace WebApplication1._1_.Controllers
             if (existingUser != null)
             {
                 // Usuário autenticado com sucesso
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Pessoa", "Home");
             }
             else
             {

@@ -1,10 +1,10 @@
 ﻿<div class="log">
     <br />
     <div id="logreg-forms">
-        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        <!-- @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
         {
             <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
-        }
+        }-->
         <form class="form-signin" action="/login" method="post">
             <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Login</h1>
             <div class="social-login">
@@ -15,7 +15,7 @@
             <input type="email" id="inputEmail" class="form-control" placeholder=" Endereço de email" required="" autofocus="">
             <input type="password" id="inputPassword" class="form-control" placeholder=" Senha" required="">
 
-            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Logar</button>
+            <button class="btn btn-success btn-block" asp-area="" asp-controller="Home" asp-action="Pessoa" type="submit"><i class="fas fa-sign-in-alt"></i> Logar</button>
             <a href="#" id="forgot_pswd"> Esqueceu sua senha?</a>
             <hr>
             <!-- <p>Don't have an account!</p>  -->
